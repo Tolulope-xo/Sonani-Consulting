@@ -649,6 +649,7 @@ ul.slick-dots {
 .more-info .left-image img {
 	width: 100%;
 	overflow: hidden;
+	padding: 25px 0 25px 25px;
 }
 
 .more-info .more-info-content {
@@ -665,7 +666,7 @@ ul.slick-dots {
 }
 
 .more-info .right-content {
-	padding: 5px 45px 5px 30px;
+	padding: 25px 45px 25px 30px;
 }
 
 .more-info .right-content span {

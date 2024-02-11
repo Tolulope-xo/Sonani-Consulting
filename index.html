@@ -17,8 +17,7 @@
     <style>
       .dropdown-content {
         display: none;
-        padding: 10px;
-        background-color: #f9f9f9;
+        /* padding: 10px; */
       }
     </style>
     <!-- Bootstrap core CSS -->
@@ -29,12 +28,6 @@
     <link rel="stylesheet" href="assets/css/templatemo-finance-business.css" />
     <link rel="stylesheet" href="assets/css/owl.css" />
     <!--
-
-Finance Business TemplateMo
-
-https://templatemo.com/tm-545-finance-business
-
--->
   </head>
 
   <body>
@@ -309,9 +302,6 @@ https://templatemo.com/tm-545-finance-business
                       and Splunk SOAR and we can develop custom playbooks that
                       orchestrate actions across multiple systems.
                     </p>
-                    <a href="" id="read-more" class="filled-button"
-                      >Read More</a
-                    >
                     <div class="dropdown-content" id="dropdown-content">
                       <ul>
                         <li>
@@ -354,6 +344,10 @@ https://templatemo.com/tm-545-finance-business
                         </li>
                       </ul>
                     </div>
+                    <a href="" id="read-more" class="filled-button"
+                      >Read More</a
+                    >
+                   
                   </div>
                 </div>
               </div>
@@ -712,7 +706,7 @@ https://templatemo.com/tm-545-finance-business
 
         if (dropdownContent.style.display === "none") {
           dropdownContent.style.display = "block";
-          readMoreBtn.textContent = "Close"; // Change button text to "Close"
+          readMoreBtn.textContent = "Show Less"; // Change button text to "Close"
         } else {
           dropdownContent.style.display = "none";
           readMoreBtn.textContent = "Read More"; // Change button text back to "Read More"
