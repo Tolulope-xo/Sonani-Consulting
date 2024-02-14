@@ -282,6 +282,11 @@
                 <div class="col-md-6">
                   <div class="left-image">
                     <img src="assets/images/more-info.jpg" alt="" />
+                    <div class="dropdown-content" id="images-dropdown">
+                      <img src="assets/images/smile.jpg" alt="" />
+                      <img src="assets/images/speed.jpg" alt="" />
+
+                      </div>
                   </div>
                 </div>
                 <div class="col-md-6 align-self-center">
@@ -303,6 +308,7 @@
                       orchestrate actions across multiple systems.
                     </p>
                     <div class="dropdown-content" id="dropdown-content">
+                      
                       <ul>
                         <li>
                           <h3>Fully Managed</h3>
@@ -693,25 +699,31 @@
       });
 
       var readMoreBtn = document.getElementById("read-more");
-      var dropdownContent = document.getElementById("dropdown-content");
+var dropdownContent = document.getElementById("dropdown-content");
+var imagesDropdown = document.getElementById("images-dropdown");
 
-      // Hide the dropdown content initially
-      dropdownContent.style.display = "none";
+// Hide the dropdown content initially
+dropdownContent.style.display = "none";
+imagesDropdown.style.display = "none";
 
-      // Toggle the visibility of dropdown content when "Read More" is clicked
-      readMoreBtn.addEventListener("click", function (event) {
-        // Prevent the default behavior of the link (navigation)
-        event.preventDefault();
-        console.log("Button clicked"); // Check if this message appears in the console
+// Toggle the visibility of dropdown content when "Read More" is clicked
+readMoreBtn.addEventListener("click", function (event) {
+  // Prevent the default behavior of the link (navigation)
+  event.preventDefault();
+  console.log("Button clicked"); // Check if this message appears in the console
 
-        if (dropdownContent.style.display === "none") {
-          dropdownContent.style.display = "block";
-          readMoreBtn.textContent = "Show Less"; // Change button text to "Close"
-        } else {
-          dropdownContent.style.display = "none";
-          readMoreBtn.textContent = "Read More"; // Change button text back to "Read More"
-        }
-      });
+  if (dropdownContent.style.display === "none") {
+    dropdownContent.style.display = "block";
+    imagesDropdown.style.display = "block";
+    readMoreBtn.textContent = "Show Less"; // Change button text to "Show Less"
+  } else {
+    dropdownContent.style.display = "none";
+    imagesDropdown.style.display = "none";
+    readMoreBtn.textContent = "Read More"; // Change button text back to "Read More"
+  }
+});
+
+
     </script>
 
     <script language="text/Javascript">
