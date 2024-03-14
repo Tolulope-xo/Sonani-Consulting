@@ -539,8 +539,12 @@ ul.slick-dots {
 	margin-top: 10px;
 }
 
+.request-form .row {
+	display: flex;
+	align-items: center;
+}
+
 .request-form a.border-button {
-	margin-top: 12px;
 	float: right;
 }
 
@@ -769,6 +773,7 @@ ul.slick-dots {
 
 .callback-form {
 	margin-top: 140px;
+	margin-bottom: 140px;
 }
 
 .callback-form .contact-form {
