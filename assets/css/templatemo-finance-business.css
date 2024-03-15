@@ -591,6 +591,12 @@ ul.slick-dots {
 	background-attachment: fixed;
 	padding: 140px 0px;
 	color: #fff;
+	
+}
+
+.fun-facts .row{
+	display: flex;
+	align-items: center;
 }
 
 .fun-facts span {
@@ -1283,6 +1289,11 @@ footer .contact-form button.filled-button:hover {
 	.fun-facts .left-content {
 		margin-right: 0px;
 		margin-bottom: 30px;
+	}
+
+	.fun-facts .container .row {
+		display: flex;
+		align-items: center;
 	}
 	.more-info .right-content  {
 		padding: 30px;
